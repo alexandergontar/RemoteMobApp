@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Basic.MainPage"
+             BackgroundColor="Aquamarine"
+             >
+    <ScrollView>
+        <StackLayout Padding="10" Margin="30,20,20,10" x:Name="stackLayout">
+        <!-- Place new controls here -->
+         <Label  x:Name="lbl1"  Text="Temp"  HorizontalOptions="Center" VerticalOptions="Center" />            
+         <Slider Minimum="-50" Maximum="100" Value="0" x:Name="tmpSlider" BackgroundColor="Red" ValueChanged="temp_SliderChanged" />
+         <Label  x:Name="lbl2"  Text="Humid"  HorizontalOptions="Center" VerticalOptions="Center" />
+         <Slider Minimum="0" Maximum="100" Value="0" x:Name="hmdSlider" BackgroundColor="Blue"/>
+         <DatePicker></DatePicker>
+        <Entry x:Name="txtField1"  Text="Ready"></Entry>
+        <Button x:Name="btn1" Text="Start" Clicked="btn1Clicked"></Button>
+        <Button x:Name="btn2" Text="Connection Settings" Clicked="btn2Clicked"></Button>
+        </StackLayout>
+     </ScrollView>
+</ContentPage>
